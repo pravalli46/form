@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+form {
+    position: absolute;
+    max-width: 25em;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    padding: 5em 2em;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5em;
+    background-color: azure;
+}
+
+.error-message {
+    visibility: hidden;
+    transition: visibility 0.3s ease;
+    color: crimson;
+}
+
+input,
+button {
+
+        width: 100%;
+        padding: 1em;
+        outline: none;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        transition: background-color 0.3s ease;
+}
+input {
+    background-color: darkslategrey;
+    border: 1px solid darkblue;
+}
+
+button {
+    background-color: coral;
+    cursor: pointer;
+    margin-top: 2.5em;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+}
